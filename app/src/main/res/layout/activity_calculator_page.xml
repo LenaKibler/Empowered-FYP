@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorPage"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/purple_500"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/et_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_info"
+            android:enabled="false"
+            android:gravity="bottom"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_seven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_edit"
+            android:layout_marginLeft="280dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/rounded_btn"
+            android:text="7"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_eight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_edit"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toRightOf="@+id/btn_seven"
+            android:background="@drawable/rounded_btn"
+            android:text="8"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_nine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_edit"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toRightOf="@+id/btn_eight"
+            android:background="@drawable/rounded_btn"
+            android:text="9"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_seven"
+            android:layout_marginLeft="280dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/rounded_btn"
+            android:text="4"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_eight"
+            android:layout_marginLeft="17dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toRightOf="@+id/btn_four"
+            android:background="@drawable/rounded_btn"
+            android:text="5"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_nine"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toRightOf="@+id/btn_five"
+            android:background="@drawable/rounded_btn"
+            android:text="6"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_four"
+            android:layout_marginLeft="280dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/rounded_btn"
+            android:text="1"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_five"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toRightOf="@+id/btn_one"
+            android:background="@drawable/rounded_btn"
+            android:text="2"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_six"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toRightOf="@+id/btn_two"
+            android:background="@drawable/rounded_btn"
+            android:text="3"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_one"
+            android:layout_marginLeft="280dp"
+            android:background="@drawable/rounded_btn"
+            android:text="."
+            android:textColor="@color/purple_500"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_zero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_two"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/btn_dot"
+            android:background="@drawable/rounded_btn"
+            android:text="0"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_equals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_three"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/btn_zero"
+            android:background="@drawable/rounded_btn"
+            android:text="="
+            android:textColor="@color/purple_500"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_divide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_edit"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toRightOf="@+id/btn_nine"
+            android:background="@drawable/rounded_btn"
+            android:text="/"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_multiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_divide"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toRightOf="@+id/btn_six"
+            android:background="@drawable/rounded_btn"
+            android:text="*"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_multiply"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toRightOf="@+id/btn_three"
+            android:background="@drawable/rounded_btn"
+            android:text="+"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_add"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/btn_equals"
+            android:background="@drawable/rounded_btn"
+            android:text="-"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_minus"
+            android:layout_marginLeft="430dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/rounded_btn"
+            android:text="CLEAR"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <!--Navigation bar-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lightBlue"
+        app:fabCradleRoundedCornerRadius="20dp"
+        app:itemIconTint="@color/white"
+        app:itemRippleColor="@color/color1"
+        app:menu="@menu/tabmenu" />
+
+</RelativeLayout>

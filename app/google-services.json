@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "339869286438",
+    "project_id": "finalyearproject-b402a",
+    "storage_bucket": "finalyearproject-b402a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:339869286438:android:a37f1cc2c51c23a56b66e7",
+        "android_client_info": {
+          "package_name": "com.example.empowered"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "339869286438-pgbq7k1265he25nn4pi4h1php0cv63tl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiXCqyGk7Uftv5fIzm5V5-1lyUudgZz08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "339869286438-pgbq7k1265he25nn4pi4h1php0cv63tl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

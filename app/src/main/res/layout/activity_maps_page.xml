@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsPage" />
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/mainKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/secondary"
+        app:rippleColor="@color/color1"
+        app:strokeColor="@color/color1"
+        app:icon="@drawable/map_key"/>
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/elecOnly"
+        android:text=" = Electricity Only"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/secondary"
+        app:fabSize="normal"
+        android:layout_alignTop="@+id/mainKey"
+        app:rippleColor="@color/color1"
+        app:strokeColor="@color/color1"
+        app:icon="@drawable/elec" />
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/dualFuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/elecOnly"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/secondary"
+        android:text=" = Dual Fuel"
+        app:fabSize="normal"
+        app:rippleColor="@color/color1"
+        app:strokeColor="@color/color1"
+        app:icon="@drawable/electrivityandgas_img"/>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/coolOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/dualFuel"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/secondary"
+        android:text=" = Area in Cool-Off Period"
+        app:fabSize="normal"
+        app:rippleColor="@color/color1"
+        app:strokeColor="@color/color1"
+        app:icon="@drawable/timer"/>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/inProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/coolOff"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/secondary"
+        android:text=" = Current Working Area"
+        app:fabSize="normal"
+        app:rippleColor="@color/color1"
+        app:strokeColor="@color/color1"
+        app:icon="@drawable/in_progress"/>
+
+
+
+    <!--Navigation bar-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:fabCradleRoundedCornerRadius="20dp"
+        android:background="@color/lightBlue"
+        app:menu="@menu/tabmenu"
+        app:itemIconTint="@color/white"
+        app:itemRippleColor="@color/color1"/>
+
+
+</RelativeLayout>

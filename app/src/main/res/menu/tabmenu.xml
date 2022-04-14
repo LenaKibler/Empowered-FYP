@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/sales"
+        android:title=""
+        android:icon="@drawable/salesinfo"/>
+
+    <item
+        android:id="@+id/map"
+        android:title=""
+        android:icon="@drawable/location"/>
+
+    <item
+        android:id="@+id/calculator"
+        android:icon="@drawable/calculator"
+        android:title="" />
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout"
+        android:title="" />
+
+
+</menu>

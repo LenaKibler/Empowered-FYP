@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/lenak/Desktop/Empowered/app/src/main/res/drawable-v24/add_img.xml" value="0.2203125" />
+        <entry key="..\:/Users/lenak/Desktop/Empowered/app/src/main/res/drawable-v24/elec.xml" value="0.2203125" />
+        <entry key="..\:/Users/lenak/Desktop/Empowered/app/src/main/res/drawable-v24/electricityonly.xml" value="0.2203125" />
+        <entry key="..\:/Users/lenak/Desktop/Empowered/app/src/main/res/layout/actionbar_logo.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/lenak/Desktop/Empowered/app/src/main/res/layout/activity_calculator_page.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/lenak/Desktop/Empowered/app/src/main/res/layout/activity_login_page.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/lenak/Desktop/Empowered/app/src/main/res/layout/activity_maps_page.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/lenak/Desktop/Empowered/app/src/main/res/layout/activity_registration_page.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/lenak/Desktop/Empowered/app/src/main/res/layout/activity_sales_flow_page.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/lenak/Desktop/Empowered/app/src/main/res/layout/activity_splash_screen.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/lenak/Desktop/Empowered/app/src/main/res/layout/popup_salesinput.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/lenak/Desktop/Empowered/app/src/main/res/menu/tabmenu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/lenak/Desktop/Empowered/app/src/main/res/mipmap-mdpi/empowered.xml" value="0.1953125" />
+        <entry key="..\:/Users/lenak/Desktop/Empowered/app/src/main/res/mipmap-mdpi/empowered_round.xml" value="0.1953125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

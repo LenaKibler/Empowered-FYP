@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    tools:context=".SalesFlowPage"
+    android:id="@+id/main">
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="843dp"
+        android:columnCount="4"
+        android:id="@+id/gridLayout">
+
+        <LinearLayout
+
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:background="@drawable/boarders"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/callbacks"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text=""
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:id="@+id/CallbacksColumn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical" />
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:background="@drawable/boarders"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/notin"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text=""
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:id="@+id/NotInColumn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical" />
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:background="@drawable/boarders"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nosale"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text=""
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:id="@+id/NoSaleColumn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical" />
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:background="@drawable/boarders"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/salemade"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text=""
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:id="@+id/SaleMadeColumn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical" />
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    </GridLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/centerPoint"
+        android:text=""
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:fabCradleRoundedCornerRadius="20dp"
+        android:background="@color/lightBlue"
+        app:menu="@menu/tabmenu"
+        app:itemIconTint="@color/white"
+        app:itemRippleColor="@color/color1"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add_img"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/centerPoint"
+        android:layout_margin="60dp"
+        app:backgroundTint="@color/secondary"
+        android:clickable="true"
+        app:rippleColor="@color/paleYellow"
+        android:contentDescription="@string/app_name"
+        android:focusable="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/delete_img"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/centerPoint"
+        android:layout_margin="60dp"
+        app:backgroundTint="@color/secondary"
+        android:clickable="true"
+        app:rippleColor="@color/paleYellow"
+        android:contentDescription="@string/app_name"
+        android:focusable="true" />
+
+
+
+</RelativeLayout>
