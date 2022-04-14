@@ -7,4 +7,5 @@ In order to download the app onto an actual decive, connect the device via USB t
 Open up Android Studio and choose the device in the device window
 Press Run
 Ensure that whichever device this applciation is installed on, is connected to the internet
-Once the applcaition is downloaded, grant location permissions from device settings
+The device should be in landscape view
+Once the applcaition is downloaded, grant location permissions from device settings before registering
